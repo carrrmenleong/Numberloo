@@ -1,1 +1,1 @@
-web: flask db upgrade; flask translate compile; gunicorn numberloo:app
+web: flask db upgrade; python addQuiz.py 300; flask translate compile; gunicorn numberloo:app

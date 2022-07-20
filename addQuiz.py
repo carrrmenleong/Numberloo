@@ -38,7 +38,8 @@ def equation(): #generates a random equation as comma separated string
 # use to upload equations to Quiz Table
 def main(args):
     quizNum = 1
-    lastQuizId = Quiz.query.order_by(Quiz.quiz_id.desc()).first().quiz_id
+    # lastQuizId = Quiz.query.order_by(Quiz.quiz_id.desc()).first().quiz_id
+    lastQuizId = 0
 
     if len(args) > 0:
         quizNum = int(args[0])
